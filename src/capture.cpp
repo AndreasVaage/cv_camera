@@ -77,7 +77,15 @@ void Capture::rescaleCameraInfo(int width, int height)
 
 void Capture::open(int32_t device_id)
 {
-  cap_.open(device_id);
+  if (device_id == 3){
+    cap_.open("rtsp://10.42.0.126/z3-1.mp4");
+  }
+  else if (device_id == 4)
+  {
+    cap_.open("rtsp://10.42.0.126/z3-2.mp4");
+  } else {
+    cap_.open(device_id);
+  }
   if (!cap_.isOpened())
   {
     std::stringstream stream;
