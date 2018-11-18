@@ -2,8 +2,8 @@
 
   <group ns="camera">
 
-    <node pkg="cv_camera" type="cv_camera_node" name="left" args="_device_id:=3 _camera_info_url:=file:///home/andreas/catkin_ws/src/cv_camera/camera_info/telodyne_left.yaml" />
+    <node pkg="cv_camera" type="cv_camera_node" name="left" args="_device_id:=3 _camera_info_url:=file:///home/andreas/catkin_ws/src/cv_camera/camera_info/telodyne_left.yaml _device_path:="http://10.42.0.127/"/>
 
-    <node pkg="cv_camera" type="cv_camera_node" name="right" args="_device_id:=4 _camera_info_url:=file:///home/andreas/catkin_ws/src/cv_camera/camera_info/telodyne_right.yaml" />
+    <node pkg="cv_camera" type="cv_camera_node" name="right" args="_device_id:=4 _camera_info_url:=file:///home/andreas/catkin_ws/src/cv_camera/camera_info/telodyne_right.yaml _device_path:="http://10.42.0.127/"/>
   </group>
 </launch>
